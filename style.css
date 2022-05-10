@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	background-image: url(./you.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+}
+.underline {
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background-color: #fff;
+	top: 27%;
+}
+
+/* ===========================
+NAWIGACJA
+=========================== */
+
+nav {
+	width: 100%;
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100px;
+	margin-top: 10rem;
+}
+
+nav ul li {
+	list-style: none;
+	padding: 1rem 0;
+}
+nav ul li a {
+	font-size: 2rem;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav ul li a:hover {
+	color: rgb(220, 36, 36);
+	transition: color 0.3s;
+}
+/* =================
+MAIN
+================= */
+
+.cover {
+	display: flex;
+	justify-content: center;
+	margin-top: 10em;
+}
+.cover img {
+	border-radius: 15px;
+}
+/* =================
+TEXT
+================= */
+.info {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: auto;
+	color: #fff;
+	margin-top: 3rem;
+	padding: 0 5rem;
+	font-size: 2rem;
+}
+.info p:nth-child(2) {
+	text-transform: uppercase;
+}
+.info p:nth-child(4) {
+	margin-top: 2.5rem;
+}
+.info .stars {
+	text-transform: uppercase;
+}
+.stars {
+	width: 100%;
+}
+.groups {
+	width: 100%;
+	display: flex;
+	font-size: 1.5rem;
+	justify-content: space-between;
+}
+.group-one p,
+.group-two p {
+	padding: 1rem 0;
+}
+/* =================
+PRZYCISK
+================= */
+button {
+	width: 200px;
+	height: 80px;
+	background-color: rgb(220, 36, 36);
+	color: #fff;
+	font-size: 2rem;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 3rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+button:hover {
+	background-color: rgb(229, 96, 96);
+	color: #fff;
+}
+/* =================
+WIDOK MOBILNY
+================= */
+@media (min-width: 576px) {
+	.underline {
+		display: none;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+}
+@media (min-width: 992px) {
+	nav ul li a {
+		font-size: 3rem;
+	}
+}
