@@ -96,7 +96,7 @@ TEXT
 .groups {
 	width: 100%;
 	display: flex;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	justify-content: space-between;
 }
 .group-one p,
@@ -136,9 +136,33 @@ WIDOK MOBILNY
 		justify-content: space-evenly;
 		margin: 0;
 	}
+	.groups {
+		flex-direction: column;
+		align-items: center;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+	}
 }
 @media (min-width: 992px) {
 	nav ul li a {
 		font-size: 3rem;
+	}
+	main {
+		display: flex;
+	}
+	.cover {
+		margin-left: 15rem;
+	}
+	.groups {
+		flex-direction: row;
+	}
+}
+@media (min-width: 1200px) {
+	.groups {
+		justify-content: space-around;
+	}
+	.info h1 {
+		margin-top: 2rem;
+		text-transform: uppercase;
 	}
 }
